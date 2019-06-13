@@ -1,0 +1,240 @@
+.thin {
+	/* Montserrat Thin = 100 */
+	font-weight: 100;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.extralight {
+	/* Montserrat Extra Light = 200 */
+	font-weight: 200;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.light {
+	/* Montserrat Light = 300 */
+	font-weight: 300;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.regular {
+	/* Montserrat Regular = 400 */
+	font-weight: 400;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.medium {
+	/* Montserrat Medium = 500 */
+	font-weight: 500;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.semibold {
+	/* Montserrat Semi-bold = 600 */
+	font-weight: 600;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.bold {
+	/* Montserrat Bold = 700 */
+	font-weight: 700;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.extrabold {
+	/* Montserrat Extra Bold = 800 */
+	font-weight: 800;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.black {
+	/* Montserrat Black = 900 */
+	font-weight: 900;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body
+{
+	width: 100% !important;
+	height: 100%;
+	padding: 0 !important;
+}
+
+
+.fcover
+{
+	width: 100%;
+	height: 400px;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background: linear-gradient(180deg, #44AFEB 0%, #9053DD 100%);
+	padding: 30px;
+}
+
+.fcover_p
+{
+	width: 100%;
+	height: 145px;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background: linear-gradient(180deg, #44AFEB 0%, #9053DD 100%);
+	padding: 30px;
+}
+
+.logotext
+
+{
+	font-size: 2rem;
+	line-height: 105%;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+}
+
+.links
+{
+	line-height: 185%;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 100;	
+}
+.logo
+{
+	width: 87px;
+	height: 87px;
+
+}
+
+.about
+{
+	font-size: 20px;
+	line-height: 128%;
+	letter-spacing: 0.1em;
+}
+
+.comfortaa
+{
+	font-family: 'Comfortaa';
+}
+.mainbody
+{
+	width: 100%;
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.box
+{
+	text-align: center;
+	padding-top: 50px;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(180deg, #9053DD 0%, #44AFEB 84.9%);
+	transition: 0.25s;
+	
+
+}
+
+.box:hover 
+{
+	box-shadow: 0px 5px 5px #8ad2e1;
+	transition: 0.25s;
+
+}
+
+.scroll-animations .box
+{
+	opacity: 0;
+}
+.hide
+{
+	display: none;
+}
+.box .title
+{
+	font-size: 24px;
+}
+.box .subtitle
+{
+	font-size: 12px;
+}
+
+.box .line
+{
+	margin: auto;
+	width: 40px;
+	height: 0px;
+
+	border: 2px solid #FFFFFF;
+	border-radius: 100px;
+}
+
+.mockup_comics
+{
+	width: 242px;
+}
+
+.mockup_wti
+{
+	width: 230px;
+	margin-left: 5px;
+
+}
+
+.mockup_ofad
+{
+	height: 156px;
+}
+
+.mockup_col
+{
+	height: 180px;
+}
+
+.mockup_truck
+{
+	height: 160px;
+}
+
+.delay-1
+{
+	animation-delay: .15s !important;
+}
+.delay-2
+{
+	animation-delay: .25s !important;
+}
+.delay-3
+{
+	animation-delay: .35s !important;
+}
+.delay-4
+{
+	animation-delay: .45s !important;
+}
+
+.port_container
+{
+	color: #1f1f1f !important;
+	font-family: 'Comfortaa';
+	text-align: center;
+}
+
+.port_container img
+{
+	width: 50vw;
+	min-width: 800px;
+}
