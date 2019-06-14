@@ -1,3 +1,143 @@
+
+@media only screen and (max-width: 1199px)
+{
+	.box
+	{
+		width: 400px !important;
+		height: 400px !important;
+		font-size: 20px !important;
+		margin-bottom: 80px !important;
+	}
+
+	.links
+	{
+		display: none;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 860px)
+{
+	.box
+	{
+		width: 300px !important;
+		height: 300px !important;
+		font-size: 20px !important;
+		margin-bottom: 80px !important;
+	}
+
+	.box .title
+	{
+		font-size: 20px !important;
+	}
+
+	.box .subtitle
+	{
+		font-size: 14px !important;
+	}
+
+	.mockup_comics
+	{
+		width: 250px !important;
+		margin-top: -40px;
+	}
+
+	.mockup_wti
+	{
+		width: 250px !important;
+		margin-top: -40px;
+	}
+
+	.mockup_ofad
+	{
+		height: 140px !important;
+	}
+
+	.links
+	{
+		display: none;
+	}
+	.fcover
+	{
+		display: none;
+	}
+
+	.port_container img
+	{
+		width: 90% !important;
+	}
+
+	.port_container h4
+	{
+		font-size: 6vw;
+	}
+
+	.port_container
+	{
+		font-size: 3vw;
+		margin-top: -30px;
+	}
+	#blocks
+	{
+		display: none;
+	}
+
+	.mcover
+	{
+		display: block !important;
+	}
+	.mabout
+	{
+		display: block !important;
+	}
+
+	.fcover_p
+	{
+		display: none !important;
+	}
+}
+
+.mcover
+{
+	display: none;
+	background: linear-gradient(180deg, #44AFEB 0%, #9053DD 100%);
+	height: 100px;
+	padding: 25px;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+	letter-spacing: 0.16em;
+}
+
+.mcover a
+{
+	color: white;
+}
+.mcover img
+{
+	width: 50px;
+}
+
+.mcover .mlink
+{
+	font-family: 'Comfortaa';
+	font-size: 12px;
+}
+
+.mabout
+{
+	display: none;
+	font-size: 3vw;
+	font-family: 'Comfortaa';
+}
+
+.back_btn
+{
+	border: 2px solid #4ea6e9; padding: 8px; text-align: center; font-family: 'Comfortaa'; text-transform: capitalize; width: 80px; margin: auto;
+}
 .thin {
 	/* Montserrat Thin = 100 */
 	font-weight: 100;
@@ -78,6 +218,17 @@ body
 	padding: 30px;
 }
 
+.footer
+{
+	width: 100%;
+	height: 240px;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background: linear-gradient(180deg, #44AFEB 0%, #9053DD 100%);
+	padding: 30px;
+}
+
 .fcover_p
 {
 	width: 100%;
@@ -106,6 +257,30 @@ body
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 100;	
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.links a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.links a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 .logo
 {
@@ -144,6 +319,7 @@ body
 	height: 300px;
 	background: linear-gradient(180deg, #9053DD 0%, #44AFEB 84.9%);
 	transition: 0.25s;
+	margin-bottom: 50px;
 	
 
 }
@@ -155,10 +331,6 @@ body
 
 }
 
-.scroll-animations .box
-{
-	opacity: 0;
-}
 .hide
 {
 	display: none;
@@ -235,6 +407,5 @@ body
 
 .port_container img
 {
-	width: 50vw;
-	min-width: 800px;
+	width: 800px;
 }
