@@ -8,6 +8,12 @@
 		font-size: 20px !important;
 		margin-bottom: 80px !important;
 	}	
+
+	.links
+	{
+		font-size: 14px !important;
+		line-height: 200% !important;
+	}
 }
 
 
@@ -211,6 +217,7 @@ body
 	width: 100% !important;
 	height: 100%;
 	padding: 0 !important;
+	min-height: 100vh;
 }
 
 
@@ -229,11 +236,11 @@ body
 {
 	width: 100%;
 	height: 240px;
-	left: 0px;
-	top: 0px;
+	bottom: 0;
+	left: 0;
 	color: #fff;
 	background: linear-gradient(180deg, #44AFEB 0%, #9053DD 100%);
-	padding: 30px;
+	padding-top: 30px;
 }
 
 .fcover_p
