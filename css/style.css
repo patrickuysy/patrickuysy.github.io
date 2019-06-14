@@ -7,7 +7,7 @@
 		height: 400px !important;
 		font-size: 20px !important;
 		margin-bottom: 80px !important;
-	}
+	}	
 }
 
 
@@ -65,12 +65,13 @@
 
 	.port_container h4
 	{
-		font-size: 6vw;
+		font-size: 5vw;
 	}
 
 	.port_container
 	{
-		font-size: 3vw;
+		padding: 5px;
+		font-size: 2vw;
 		margin-top: -30px;
 	}
 	#blocks
@@ -93,6 +94,19 @@
 	}
 }
 
+@media only screen and (max-width: 540px)
+{
+	.port_container h4
+	{
+		font-size: 24	px;
+	}
+
+	.port_container
+	{
+		font-size: 15px;
+		margin-top: -30px;
+	}
+}
 .mcover
 {
 	display: none;
