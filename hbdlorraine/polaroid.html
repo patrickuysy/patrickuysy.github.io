@@ -22,12 +22,9 @@ html
 body
 {
 	width: 100%;
-	background: linear-gradient(0deg, #a770ef, #cf8bf3, #fdb99b);
-	background-size: 600% 600%;
-
-	-webkit-animation: background-gradient 8s ease infinite;
-	-moz-animation: background-gradient 8s ease infinite;
-	animation: background-gradient 8s ease infinite;
+	background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-size: 100%;
+	background-position: center;
 
 }
 @font-face {
@@ -44,7 +41,7 @@ body
 	font-family: Rozha;
 	color: rgba(0,0,0,0);
 	-webkit-text-stroke: 1.4px white;
-	font-size: 75px;
+	font-size: 50px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -63,7 +60,7 @@ body
 .container_b .row
 {
 	font-family: 'Roboto' !important;
-	font-size: 16px !important;
+	font-size: 14px !important;
 	color: white !important;
 	-webkit-text-stroke: 0px white;
 	margin-top: -30px;
@@ -104,22 +101,60 @@ body
 	50%{background-position:51% 100%}
 	100%{background-position:50% 0%}
 }
+.carousel-item
+{
+	width: 80% !important;
+}
+.carousel { 
+	width: 80% !important;
+	margin: auto;
+}
+
+.polaroid_cont
+{
+	text-align: center;
+	font-style: "Avenir Next";
+	font-size: 18px;
+	color: darksalmon;
+}
+
+.polaroid_cont img
+{
+	width: 80%;
+	animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 </style>
 <body>
-	<div class="container_b animated fadeIn">
-		HEY, LORRAAAIINEE
-		<hr>
-		<div class=row>
-			<div class='col s6'>
-				it’s your birthday!<br>
-				here’s a little something something<br>
-				from people who love you dearly.
-			</div>
-			<div class='col s6 right-align'>
-				<br>
-				<a href="throwback.html" class="buttons">CONTINUE</a>
-			</div>
-		</div>
-	</div>
+<div class="polaroid_cont"><br><br><br><br>
+<img src="plecpolaroid.png"/><br>
+"Friends are like stars, you don't always see them, but they're always there."
+<br>
+- Ewan ko ba sino, (HAHA, Daming alam ih)
+<br><br>
+<a href="finale.html" class="buttons">CONTINUE</a>
+<br>
+<br>
+</div>
+<br>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.carousel').carousel();
+	});
+
+</script>
 </html>

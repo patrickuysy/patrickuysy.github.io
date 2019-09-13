@@ -22,12 +22,10 @@ html
 body
 {
 	width: 100%;
-	background: linear-gradient(0deg, #a770ef, #cf8bf3, #fdb99b);
-	background-size: 600% 600%;
-
-	-webkit-animation: background-gradient 8s ease infinite;
-	-moz-animation: background-gradient 8s ease infinite;
-	animation: background-gradient 8s ease infinite;
+	background-image: url("lastlorraine.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 
 }
 @font-face {
@@ -44,7 +42,7 @@ body
 	font-family: Rozha;
 	color: rgba(0,0,0,0);
 	-webkit-text-stroke: 1.4px white;
-	font-size: 75px;
+	font-size: 50px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -63,7 +61,7 @@ body
 .container_b .row
 {
 	font-family: 'Roboto' !important;
-	font-size: 16px !important;
+	font-size: 14px !important;
 	color: white !important;
 	-webkit-text-stroke: 0px white;
 	margin-top: -30px;
@@ -75,9 +73,9 @@ body
 
 .buttons
 {
-	border: 2px solid white;
+	border: 2px solid grey;
 	font-size: 16px;
-	color: white;
+	color: grey;
 	font-family: "Questrial";
 	padding: 15px 50px 15px 50px;
 	transition: .25s ease-in-out;
@@ -104,22 +102,63 @@ body
 	50%{background-position:51% 100%}
 	100%{background-position:50% 0%}
 }
+.carousel-item
+{
+	width: 80% !important;
+}
+.carousel { 
+	width: 80% !important;
+	margin: auto;
+}
+
+.polaroid_cont
+{
+	text-align: center;
+	font-style: "Questrial";
+	font-size: 18px;
+	color: grey;
+	width: 600px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	opacity: 0.5;
+	padding: 20px;
+	transition: 1s;
+		position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.polaroid_cont:hover
+{
+	opacity: 1;
+	transition: 1s;
+	box-shadow: 0px 5px 20px black;
+}
 </style>
 <body>
-	<div class="container_b animated fadeIn">
-		HEY, LORRAAAIINEE
-		<hr>
-		<div class=row>
-			<div class='col s6'>
-				it’s your birthday!<br>
-				here’s a little something something<br>
-				from people who love you dearly.
-			</div>
-			<div class='col s6 right-align'>
-				<br>
-				<a href="throwback.html" class="buttons">CONTINUE</a>
-			</div>
-		</div>
-	</div>
+<div class="polaroid_cont">
+<h3>HAPPY BIRTHDAY, LORRAINE!</h3> <br>
+Thank you for everything you've done for all of us. <br>
+You make the world brighter by just being in it. <br>
+Never fail to be who you are always. <br><br>
+WE LOVE YOU! Have a great day ahead! <br><br>
+Always and forever, <br>
+Patrick, Eloisa, and Charney<br><br>
+
+<a href="index.html" class="buttons">RESTART</a>
+<br><br>
+</div>
+<br>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.carousel').carousel();
+	});
+
+</script>
 </html>
