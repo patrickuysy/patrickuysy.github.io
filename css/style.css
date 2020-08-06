@@ -41,24 +41,31 @@
 
 	.mockup_comics
 	{
-		width: 250px !important;
+		width: 180px !important;
 		margin-top: -40px;
 	}
 
 	.mockup_wti
 	{
-		width: 250px !important;
+		width: 180px !important;
 		margin-top: -40px;
 	}
 
 	.mockup_ofad
 	{
 		height: 140px !important;
+		margin-top: -40px;
+	}
+	.mockup_truck
+	{
+		height: 140px !important;
+		margin-top: -40px;
 	}
 
 	.mockup_ess
 	{
-		height: 100px !important;
+		height: 120px !important;
+		margin-top: -20px;
 	}
 
 	.links
@@ -366,15 +373,7 @@ body
 	transition: 0.25s;
 
 }
-.box img
-{
-	transition: 0.25s ease-in-out;
-}
-.box:hover > img
-{
-	margin-top: -5px;
-	transition: 0.25s ease-in-out;
-}
+
 .hide
 {
 	display: none;
