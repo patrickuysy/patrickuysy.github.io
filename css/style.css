@@ -56,6 +56,11 @@
 		height: 140px !important;
 	}
 
+	.mockup_ess
+	{
+		height: 100px !important;
+	}
+
 	.links
 	{
 		display: none;
@@ -113,6 +118,11 @@
 		font-size: 15px;
 		margin-top: -30px;
 	}
+
+	.port_container p
+	{
+		width: 80% !important;
+	}
 }
 .mcover
 {
@@ -150,67 +160,68 @@
 
 .back_btn
 {
-	border: 2px solid #4ea6e9; padding: 8px; text-align: center; font-family: 'Comfortaa'; text-transform: capitalize; width: 80px; margin: auto;
+	border-radius: 100px; padding: 8px; text-align: center; font-family: 'Comfortaa'; text-transform: capitalize; width: 80px; margin: auto; color: white; line-height: 2; background: linear-gradient(90deg, #44AFEB 0%, #9053DD 100%);
+
 }
 .thin {
 	/* Montserrat Thin = 100 */
 	font-weight: 100;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .extralight {
 	/* Montserrat Extra Light = 200 */
 	font-weight: 200;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .light {
 	/* Montserrat Light = 300 */
 	font-weight: 300;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .regular {
 	/* Montserrat Regular = 400 */
 	font-weight: 400;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .medium {
 	/* Montserrat Medium = 500 */
 	font-weight: 500;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family:  "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .semibold {
 	/* Montserrat Semi-bold = 600 */
 	font-weight: 600;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .bold {
 	/* Montserrat Bold = 700 */
 	font-weight: 700;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .extrabold {
 	/* Montserrat Extra Bold = 800 */
 	font-weight: 800;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 
 .black {
 	/* Montserrat Black = 900 */
 	font-weight: 900;
-	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 body
@@ -222,10 +233,20 @@ body
 }
 
 
+
+.title_header
+{
+	margin: auto;
+	text-align: center;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #9053DD;
+}
+
 .fcover
 {
 	width: 100%;
-	height: 400px;
+	height:350px;
 	left: 0px;
 	top: 0px;
 	color: #fff;
@@ -341,11 +362,19 @@ body
 
 .box:hover 
 {
-	box-shadow: 0px 5px 5px #8ad2e1;
+	box-shadow: 0px 10px 15px -8px #44afeb;
 	transition: 0.25s;
 
 }
-
+.box img
+{
+	transition: 0.25s ease-in-out;
+}
+.box:hover > img
+{
+	margin-top: -5px;
+	transition: 0.25s ease-in-out;
+}
 .hide
 {
 	display: none;
@@ -386,6 +415,12 @@ body
 	height: 156px;
 }
 
+.mockup_ess
+{
+	height: 140px;
+}
+
+
 .mockup_col
 {
 	height: 180px;
@@ -422,5 +457,26 @@ body
 
 .port_container img
 {
-	width: 800px;
+	width: 60%;
+}
+
+.port_container p
+{
+	margin: 0 0 30px 0;
+	font-weight: 400;
+	line-height: 30px;
+	width: 55%;
+	text-align: left;
+	margin: auto;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.animations
+{
+	margin: auto; width: 60%; text-align: center; background-color: #CBEDE2; padding: 35px 20px 10px 20px;
+}
+
+.animations img
+{
+	box-shadow: 0px 5px 10px -6px #3fb890;
 }
