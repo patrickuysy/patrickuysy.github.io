@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sunset Memorial Hospital</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+	<style>
+		body{font-family:Nunito;background-image:url(body_bg.png);background-size:100%}.grid-container{padding-right:30px;display:grid;grid-template-areas:'menu cards cards cards cards' 'menu stats stats stats stats' 'menu gender table table table';grid-template-columns:282px 335px auto;grid-template-rows:220px 366px auto;grid-gap:30px;background-color:#fff;width:1440px;height:900px;border-radius:20px;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);box-shadow:0 8px 44px -12px #c56d86;border-radius:20px}@font-face{font-family:Nunito;src:url(Nunito-Regular.ttf)}.menu{grid-area:menu}.cards{grid-area:cards}.stats{grid-area:stats}.gender{grid-area:gender;margin-bottom:30px}.table{grid-area:table;margin-bottom:30px}.user_container{display:flex;align-items:center;justify-content:center;height:210px;left:0;border-bottom-right-radius:20px;border-top-left-radius:20px;background:linear-gradient(180deg,#c56d86 -188.2%,#725a7a 88.78%)}.user_greeting{text-align:center;color:#fff;font-family:Nunito;font-style:normal;font-weight:700;font-size:12px;line-height:16px;letter-spacing:.09em}.highlighted_nav{height:38px;font-family:Nunito;font-style:normal;font-weight:700;font-size:14px;display:flex;align-items:center;color:#355c7d;padding-left:60px;cursor:pointer}.sidenav{height:653px;background:linear-gradient(#725a7a,#c56d86);border-top-right-radius:20px;border-bottom-left-radius:20px}.sidenav .waves{position:relative;bottom:-33px;left:0}.sidenav .nav_items{width:282px;height:38px;left:0;top:210px;font-family:Nunito;font-weight:600;font-size:14px;display:flex;align-items:center;color:#e7bed7;padding-left:60px;padding-top:47px;cursor:pointer;transition:.25s}.nav_items:hover{color:#fff;padding-left:65px;transition:.25s}.sidenav .support_btn{position:relative;top:150px;left:25px;z-index:999;transition:.5s;cursor:pointer}.sidenav .support_btn:hover{top:147px;transition:.25s}.card-container{display:grid;grid-template-areas:'card1 card2 card3 card4';grid-gap:30px}.card1{grid-area:card1;background-color:#00f}.card2{grid-area:card2;background-color:#ff69b4}.card3{grid-area:card3;background-color:#e6e6fa}.card4{grid-area:card4;background-color:gold}.sunset_label{width:300px;height:32px;font-family:Nunito;font-style:normal;font-weight:700;font-size:14px;color:#355c7d}.sunset_label img{vertical-align:middle}.stat_card1{height:133px;width:260px;grid-area:card1;background-image:url(tp_bg.png);background-size:100%;box-shadow:0 16px 12px -10px rgba(255,139,149,.38);border-radius:20px}.stat_card2{height:133px;width:260px;grid-area:card2;background-image:url(cost_bg.png);background-size:100%;box-shadow:0 16px 12px -10px rgba(255,139,149,.38);border-radius:20px}.stat_card3{height:133px;width:260px;grid-area:card3;background-image:url(staff_bg.png);background-size:100%;box-shadow:0 16px 12px -10px rgba(255,139,149,.38);border-radius:20px}.stat_card4{height:133px;width:260px;grid-area:card4;background-image:url(rooms_bg.png);background-size:100%;box-shadow:0 16px 12px -10px rgba(255,139,149,.38);border-radius:20px}.content_card{padding:15px}.chip{background-color:#fff;padding-top:3px;padding-bottom:3px;padding-left:6px;padding-right:6px;font-family:Nunito;font-weight:600;color:#c56d86;text-align:center;font-size:10px;border-radius:100px}.chip_tp{background-color:none;padding-top:3px;padding-bottom:3px;padding-left:3px;padding-right:3px;font-family:Nunito;font-weight:600;color:#fff;text-align:center;font-size:10px;border-radius:100px}.bargraph_container{background:linear-gradient(180deg,#f8f8f8 0,#f3f8fc 100%);box-shadow:0 14px 11px -13px #e5eff9;border-radius:20px;padding:15px;width:1100px;height:300px}.bargraph_container table{margin:auto}.bargraph_container td{text-align:center;vertical-align:bottom;padding-bottom:12px;z-index:20}.bargraph_container .levels{font-family:Nunito;font-style:normal;font-weight:700;font-size:9px;text-align:center;padding:15px;color:#355c7d;border:2px solid transparent}.bargraph_container .yotm{font-family:Nunito;font-style:normal;font-weight:700;font-size:9px;text-align:center;padding-left:34px;padding-right:34px;color:#355c7d}.graph_lines{position:relative;width:1100px;height:300px;background-color:transparent;opacity:.2;margin-top:-301px;z-index:1}.graph_lines .dotted_lines{position:relative;width:1010px;margin-left:70px;opacity:.8;border:1px solid transparent;padding-top:13px;padding-bottom:13px}.configs td{font-family:Nunito;font-style:normal;font-weight:700;font-size:14px;color:#355c7d;padding-right:30px;opacity:.7;cursor:pointer;transition:.5s}.configs td:hover{color:#ff7682;opacity:1;transition:.5s}.configs th{font-family:Nunito;font-style:normal;font-weight:700;font-size:14px;color:#c56d86;border-bottom:2px solid #ff7682;cursor:pointer}.gender_cont{width:305px;background:linear-gradient(180deg,#f8f8f8 0,#f3f8fc 100%);box-shadow:0 14px 11px -13px #e5eff9;border-radius:20px;padding-top:15px;padding-left:15px;padding-right:15px;vertical-align:middle;font-family:Nunito;font-style:normal;font-weight:700;font-size:14px;color:#355c7d}.admitted_cont{background:linear-gradient(180deg,#f8f8f8 0,#f3f8fc 100%);box-shadow:0 14px 11px -13px #e5eff9;border-radius:20px;padding:15px;width:735px}.admitted_cont th{color:#c56d86;text-align:left;padding-right:30px;padding-bottom:10px;border-bottom:2px dashed #d1d9df}.admitted_cont td{color:#355c7d;text-align:left;padding-bottom:10px;font-weight:600;padding-top:9px}
+	</style>
+</head>
+<body>
+	<div class=grid-container>
+
+		<div class=menu>
+			<div class="user_container">
+				<div class="user_greeting">
+					<img src="meredith.png"/>
+					<br><br>
+					Hello, Meredith!
+				</div>
+			</div>
+			<div class="highlighted_nav">
+				<img src="dashboard_ic.png"> &nbsp; &nbsp; Dashboard
+			</div>
+			<div class="sidenav">
+				<div class="nav_items"> <img src="patient_ic.png"> &nbsp; &nbsp; Patient Records </div>
+				<div class="nav_items"> <img src="staff_ic.png"> &nbsp; &nbsp; Manage Staff </div>
+				<div class="nav_items"> <img src="doctor_ic.png"> &nbsp; &nbsp; Doctor Profiles </div>
+				<div class="nav_items"> <img src="settings_ic.png"> &nbsp; &nbsp; Settings </div>
+				<div class="nav_items"> <img src="logout_ic.png"> &nbsp; &nbsp; Logout </div>
+				<img src="contact_sup.png" class="support_btn" />
+				<img src="waves effect.png" class="waves" />
+			</div>
+		</div>
+
+		<div class="cards">
+			<br>
+			<div style="float:right;margin-top: 12px;cursor: pointer;">
+				<img src="search-ic.png"> &nbsp; &nbsp;
+				<img src="notif-ic.png">
+			</div>
+			<div class="sunset_label">
+				<img src="sunset_logo.png"> &nbsp; Sunset Memorial Hospital
+			</div>
+			<br>
+			<div class="card-container">
+
+				<div class="stat_card1">
+					<div class="content_card">
+						<img src="badge_patients.png" style="float:right"/>
+						<span style="color: #fff; opacity:0.8">Total Patients</span>
+						<br>
+						<span style="color: #fff; font-size: 36px; font-weight: 700">32,482</span>
+						<br>
+						<span class="chip">INPATIENT</span> <span class="chip_tp">15,327</span>
+						<span class="chip">OUTPATIENT</span> <span class="chip_tp">17,155</span>
+					</div>
+				</div>
+				<div class="stat_card2">
+					<div class="content_card">
+						<img src="badge_costs.png" style="float:right"/>
+						<span style="color: #fff; opacity:0.8; font-size:14px;">Available Treatment Costs</span>
+						<br>
+						<span style="color: #fff; font-size: 36px; font-weight: 700"><sup style="font-size:16px;">$ </sup>340,320</span>
+						<br>
+
+					</div>
+				</div>
+				<div class="stat_card3">
+					<div class="content_card">
+						<img src="badge_staff.png" style="float:right"/>
+						<span style="color: #fff; opacity:0.8">Available Staff</span>
+						<br>
+						<span style="color: #fff; font-size: 36px; font-weight: 700">32/450</span>
+						<br>
+						<span class="chip">UNAVAILABLE</span> <span class="chip_tp">418</span>
+						<span class="chip">AVAILABLE</span> <span class="chip_tp">32</span>
+					</div> 
+				</div>
+				<div class="stat_card4">
+					<div class="content_card">
+						<img src="badge_rooms.png" style="float:right"/>
+						<span style="color: #fff; opacity:0.8">Available Staff</span>
+						<br>
+						<span style="color: #fff; font-size: 36px; font-weight: 700">21/650</span>
+						<br>
+						<span class="chip">UNAVAILABLE</span> <span class="chip_tp">629</span>
+						<span class="chip">AVAILABLE</span> <span class="chip_tp">21</span>
+					</div> 
+				</div>
+			</div>
+		</div> 
+		<div class="stats">
+			<div class="configs" style="margin-top: -5px; float:right;">
+				<table>
+					<tr>
+						<td>
+							Daily
+						</td>
+						<td>
+							Weekly
+						</td>
+						<td>
+							Monthly
+						</td>
+						<th>
+							Yearly
+						</th>
+						<th style="border: none;padding-left: 30px;">
+							<img src="filters.png"/>
+						</th>
+
+					</tr>
+				</table>
+			</div>
+			<div class="sunset_label">
+				Patient Overview
+			</div>
+			<div class="bargraph_container">
+				<table cellspacing="0">
+					<tr>
+						<th class=levels>20k</th> 
+						<td rowspan="5">
+							<img src=jan-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=feb-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=mar-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=apr-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=may-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=jun-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=jul-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=aug-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=sep-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=oct-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=nov-bar.svg>
+						</td>
+						<td rowspan="5">
+							<img src=dec-bar.svg>
+						</td>
+					</tr>
+					<tr>
+						<th class=levels>15k</th> 
+					</tr>
+					<tr>
+						<th class=levels>10k</th> 
+					</tr>
+					<tr>
+						<th class=levels>5k</th> 
+					</tr>
+					<tr>
+						<th class=levels>0</th> 
+					</tr>
+					<tr>
+						<th> </th> 
+						<th class="yotm">JAN</th>
+						<th class="yotm">FEB</th>
+						<th class="yotm">MAR</th>
+						<th class="yotm">APR</th>
+						<th class="yotm">MAY</th>
+						<th class="yotm">JUN</th>
+						<th class="yotm">JUL</th>
+						<th class="yotm">AUG</th>
+						<th class="yotm">SEP</th>
+						<th class="yotm">OCT</th>
+						<th class="yotm">NOV</th>
+						<th class="yotm">DEC</th>
+					</tr>
+
+					<tr>
+						<td colspan="13">
+							<br>
+							<div style=
+							"display: flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 11px;
+							line-height: 12px;
+							font-weight: 600;
+							color: #355C7D;
+							">
+							<img src="graph-legend1.png" style="margin-top:4px;"> &nbsp; Inpatient  &nbsp; &nbsp; &nbsp; <img src="graph-legend2.png" style="margin-top:4px;"> &nbsp; Outpatient
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<div class="graph_lines">
+				<div class="dotted_lines"><hr style="  border-top: 1px dashed #355C7D;"></div>
+				<div class="dotted_lines"><hr style="  border-top: 1px dashed #355C7D;"></div>
+				<div class="dotted_lines"><hr style="  border-top: 1px dashed #355C7D;"></div>
+				<div class="dotted_lines"><hr style="  border-top: 1px dashed #355C7D;"></div>
+				<div class="dotted_lines"><hr style="  border-top: 1px dashed #355C7D;"></div>
+			</div>
+		</div>
+	</div> 
+	<div class="gender">
+		<div class="sunset_label">
+			Patient Gender Statistics<br><br>
+		</div>
+		<div class="gender_cont">
+			<table>
+				<tr>
+					<td>
+						<img src="pie_stats.svg" height="160px">
+					</td>
+					<td>
+						<ul style=" list-style-image: url('male_bullet.png');">
+							<li>
+								Male <br>
+								<span style="font-size: 10px; opacity:0.8">20,138 &nbsp; &nbsp; | &nbsp; &nbsp; 62%</span>
+							</li>
+						</ul>
+						<ul style=" list-style-image: url('female_bullet.png');">
+							<li>
+								Female <br>
+								<span style="font-size: 10px; opacity:0.8">12,344 &nbsp; &nbsp; | &nbsp; &nbsp; 38%</span>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div> 
+
+
+
+	<div class="table">
+		<div class="configs" style="margin-top: -5px; float:right;">
+			<table>
+				<tr>
+					<td>
+						Daily
+					</td>
+					<td>
+						Weekly
+					</td>
+					<td>
+						Monthly
+					</td>
+					<th>
+						Yearly
+					</th>
+					<th style="border: none;padding-left: 30px;">
+						<img src="filters.png"/>
+					</th>
+
+				</tr>
+			</table>
+		</div>
+		<div class="sunset_label">
+			Patients' Time Admitted <br><br>
+			<div class="admitted_cont">
+				<table>
+					<tr>
+						<th>Patient's Name  <img src="ic-sort.png" style="margin-top: -4px; cursor:pointer;"></th>
+						<th>Doctor <img src="ic-sort.png" style="margin-top: -4px; cursor:pointer;"></th>
+						<th>Admitted on <img src="ic-sort.png" style="margin-top: -4px; cursor:pointer;"></th>
+						<th>Discharged on <img src="ic-sort.png" style="margin-top: -4px; cursor:pointer;"></th>
+						<th>Total duration of stay <img src="ic-sort.png" style="margin-top: -4px; cursor:pointer;"></th>
+					</tr>
+
+					<tr>
+						<td>Brooke Davis</td>
+						<td>Dr. Grey</td>
+						<td>08/20/20 03:45:27</td>
+						<td>--</td>
+						<td>00d 02h 00m</td>
+					</tr>
+
+					<tr>
+						<td>Peyton Sawyer</td>
+						<td>Dr. Yang</td>
+						<td>07/13/20 18:22:30</td>
+						<td>07/23/20 19:22:30</td>
+						<td>10d 10h 00m</td>
+					</tr>
+
+					<tr>
+						<td>Lucas Scott</td>
+						<td>Dr. Schmitt</td>
+						<td>07/12/20 12:30:21</td>
+						<td>07/16/20 14:50:30</td>
+						<td>04d 02h 20m</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div> 
+
+
+
+
+
+
+</div> <!--grid container end -->
+</body>
+</html>
